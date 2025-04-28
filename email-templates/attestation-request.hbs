@@ -7,48 +7,65 @@
   <h1
     style="color: #8B0000; margin-top: 10px; font-size: 32px"
   >{{verificationType}}
-    Verification Request</h1>
+    Attestation Request</h1>
   <p>
-    Verify your
-    {{verificationType}}
-    to finalize your application, and possibly secure a job with
-    {{companyName}}.
+    Nneoma Okoro is requesting to run
+    {{attestationType}}
+    Verification on the Job you filled on your resume.
   </p>
 
   <div
     style="background-color: #FFF0F0; border-radius: 8px; border: 1px solid #B01116; padding: 20px; margin: 20px 0;"
   >
-    <table style="width: 100%; border-collapse: collapse;">
+    <table style="width: 100%; border-collapse: collapse; color: #53090B">
       <tr
         style="padding: 12px 0; font-weight: 500; border-bottom: 1px solid #46383D;"
       >
-        <td style="padding: 12px 0; color: #777; ">By</td>
-        <td style="text-align: end">{{companyName}}</td>
+        <td style="padding: 12px 0; color: #321011C7; ">By</td>
+        <td
+          style="padding: 12px 0; text-align: right; font-weight: semi-bold; font-size: 20px"
+        >{{companyName}}</td>
+      </tr>
+      <tr
+        style="padding: 12px 0; font-weight: 500; border-bottom: 1px solid #46383D;"
+      >
+        <td style="padding: 12px 0; color: #321011C7; ">For</td>
+        <td
+          style="padding: 12px 0; text-align: right; font-weight: semi-bold; font-size: 20px"
+        >{{for}} Coco Melon LTD</td>
+      </tr>
+      <tr
+        style="padding: 12px 0; font-weight: 500; border-bottom: 1px solid #46383D;"
+      >
+        <td style="padding: 12px 0; color: #321011C7;">Role</td>
+        <td
+          style="padding: 12px 0; text-align: right; font-weight: semi-bold; font-size: 20px"
+        >{{jobRole}} </td>
       </tr>
       <tr>
-        <td style="padding: 12px 0; color: #777;">Role</td>
+        <td style="padding: 12px 0px 0px 0px; color: #321011C7;">Duration</td>
         <td
-          style="padding: 12px 0; text-align: right; font-weight: 500;"
-        >{{jobRole}}</td>
+          style="padding: 12px 0 0px 0px; text-align: right;  font-weight: semi-bold; font-size: 20px"
+        >{{duration}} 24 June 2021 - 23 Jan 2024</td>
       </tr>
     </table>
   </div>
 
   <div
-    style="background-color: #3D1A1A; color: #FFFFFFCC; border-radius: 8px; padding: 30px 20px; margin: 30px 0; text-align: center; background-image: url('https://example.com/pattern.png'); background-size: cover; background-blend-mode: overlay;"
+    style="background-color: #FFD7D9; color: #3C0103; border-radius: 8px; padding: 30px 20px; margin: 30px 0; text-align: center; background-image: url('https://example.com/pattern.png'); background-size: cover; background-blend-mode: overlay;"
   >
-    <h2 style="margin-top: 0; margin-bottom: 20px; color: white;">What to Expect</h2>
+    <h2 style="margin-top: 0; margin-bottom: 20px; color: #3C0103;">What to
+      Expect</h2>
 
-    <div style="margin: 0px;">Complete KYC</div>
-    <div style="margin: 8px 0;">Verification complete</div>
-    <div style="margin: 0;">Initiate Attestation</div>
+    <div style="margin: 8px 0;">Your have Complete KYC</div>
+    <div>Attest to Job Histroy</div>
     <div style="display:flex; align-items:center; justify-content: center;">
 
       <a
         href="{{verificationUrl}}"
         style="display: block; background-color: #B11116; color: white; text-decoration: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; margin-top: 25px; text-align: center; width: 50%;"
       >
-        Complete Verification
+        Attest
       </a>
     </div>
   </div>
@@ -86,6 +103,38 @@
     </div>
   </div>
 
+  <p>Your can contact
+    <span style="color: #191847; font-size: semi-bold;">{{contactPerson}}</span>
+    for more clarification if need.</p>
+
+  <table
+    style="width: 100%; border-collapse: collapse; margin: 20px 0;  color: #200506"
+  >
+    <tr>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Telephone</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee; font-size: 20px"
+      >{{companyPhone}}</td>
+    </tr>
+    <tr>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Email Address</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee; font-size: 20px"
+      >{{companyEmail}}</td>
+    </tr>
+    <tr>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Contact Address</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee; font-size: 20px"
+      >{{companyAddress}}</td>
+    </tr>
+  </table>
   <p>Your can contact the company seeking the Verification request below</p>
 
   <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -94,7 +143,7 @@
         style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
       >Telephone</td>
       <td
-        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee; font-size: 20px"
       >{{companyPhone}}</td>
     </tr>
     <tr>
@@ -102,7 +151,7 @@
         style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
       >Email Address</td>
       <td
-        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee; font-size: 20px"
       >{{companyEmail}}</td>
     </tr>
     <tr>
@@ -110,20 +159,19 @@
         style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
       >Contact Address</td>
       <td
-        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;  font-size: 20px"
       >{{companyAddress}}</td>
     </tr>
   </table>
 
   <div style="margin: 30px 0;">
-    <p style="font-weight: bold;">Do you not recognise this verification
-      request?</p>
+    <p style="font-weight: bold;">Do you not recognise this attestation request?</p>
     <p>Just reply to this email or click
       <a
         href="{{reportUrl}}"
         style="color: #E92027; text-decoration: underline; font-weight: bold"
       >Report</a>
-      to report this verification request</p>
+      to report this attestation request</p>
   </div>
 
 </div>
