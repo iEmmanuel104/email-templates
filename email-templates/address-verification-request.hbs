@@ -1,72 +1,124 @@
-<h2>Hi {{candidateName}},</h2>
-<h1 style="color: #8B0000; margin-top: 10px;">Address Verification Request</h1>
+<div
+  style="background: #fff; border-radius: 16px; padding: 60px 37px 30px 37px"
+>
 
-<p>Verify your Address History to finalize your application, and possibly secure a job with {{companyName}}.</p>
+  <h2>Hi {{candidateName}},</h2>
+  <h1 style="color: #8B0000; margin-top: 10px; font-size: 32px">Address
+    Verification Request</h1>
 
-<div style="background-color: #FFF0F0; border-radius: 8px; padding: 20px; margin: 20px 0;">
-  <table style="width: 100%; border-collapse: collapse;">
+  <p>Verify your Job History to finalize your application, and possibly secure a
+    job with
+    {{companyName}}.</p>
+
+  <div
+    style="background-color: #FFF0F0; border-radius: 8px; border: 1px solid #B01116; padding: 20px; margin: 20px 0;"
+  >
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr
+        style="padding: 12px 0; font-weight: 500; border-bottom: 1px solid #46383D;"
+      >
+        <td style="padding: 12px 0; color: #777; ">By</td>
+        <td style="text-align: end">{{companyName}}</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 0; color: #777;">Role</td>
+        <td
+          style="padding: 12px 0; text-align: right; font-weight: 500;"
+        >{{jobRole}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div
+    style="background-color: #3D1A1A; color: #FFFFFFCC; border-radius: 8px; padding: 30px 20px; margin: 30px 0; text-align: center; background-image: url('https://example.com/pattern.png'); background-size: cover; background-blend-mode: overlay;"
+  >
+    <h2 style="margin-top: 0; margin-bottom: 20px; color: white;">What to Expect</h2>
+
+    <div style="margin: 0px;">Complete KYC</div>
+    <div style="margin: 8px 0;">Verification complete</div>
+    <div style="margin: 0;">Initiate Attestation</div>
+    <div style="display:flex; align-items:center; justify-content: center;">
+
+      <a
+        href="{{verificationUrl}}"
+        style="display: block; background-color: #B11116; color: white; text-decoration: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; margin-top: 25px; text-align: center; width: 50%;"
+      >
+        Complete Verification
+      </a>
+    </div>
+  </div>
+
+  <p>This request will expire in
+    {{expiryDays}}
+    days. Please complete the verification before the expiration date. If the
+    verification is not completed within this timeframe, you will no longer be
+    able to proceed with it.</p>
+
+  <div style="text-align: center; margin: 40px 0;">
+    <div style="display: inline-block; margin: 0 10px; text-align: center;">
+      <div
+        style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;"
+      >{{days}}</div>
+      <div style="font-size: 12px; color: #777; margin-top: 5px;">DAY</div>
+    </div>
+    <div style="display: inline-block; margin: 0 10px; text-align: center;">
+      <div
+        style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;"
+      >{{hours}}</div>
+      <div style="font-size: 12px; color: #777; margin-top: 5px;">HOUR</div>
+    </div>
+    <div style="display: inline-block; margin: 0 10px; text-align: center;">
+      <div
+        style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;"
+      >{{minutes}}</div>
+      <div style="font-size: 12px; color: #777; margin-top: 5px;">MINUTES</div>
+    </div>
+    <div style="display: inline-block; margin: 0 10px; text-align: center;">
+      <div
+        style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;"
+      >{{seconds}}</div>
+      <div style="font-size: 12px; color: #777; margin-top: 5px;">SECONDS</div>
+    </div>
+  </div>
+
+  <p>Your can contact the company seeking the Verification request below</p>
+
+  <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
     <tr>
-      <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">By</td>
-      <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{companyName}}</td>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Telephone</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{companyPhone}}</td>
     </tr>
     <tr>
-      <td style="padding: 12px 0; color: #777;">Role</td>
-      <td style="padding: 12px 0; text-align: right; font-weight: 500;">{{jobRole}}</td>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Email Address</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{companyEmail}}</td>
+    </tr>
+    <tr>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Contact Address</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{companyAddress}}</td>
     </tr>
   </table>
-</div>
 
-<div style="background-color: #3D1A1A; color: white; border-radius: 8px; padding: 30px 20px; margin: 30px 0; text-align: center; background-image: url('https://example.com/pattern.png'); background-size: cover; background-blend-mode: overlay;">
-  <h2 style="margin-top: 0; margin-bottom: 20px; color: white;">What to Expect</h2>
-  
-  <div style="margin: 15px 0;">Complete KYC</div>
-  <div style="margin: 15px 0;">Verification complete</div>
-  <div style="margin: 15px 0;">Initiate Attestation</div>
-  
-  <a href="{{verificationUrl}}" style="display: block; background-color: #B11116; color: white; text-decoration: none; padding: 12px 24px; border-radius: 4px; font-weight: bold; margin-top: 25px; text-align: center;">
-    Complete Verification
-  </a>
-</div>
-
-<p>This request will expire in {{expiryDays}} days. Please complete the verification before the expiration date. If the verification is not completed within this timeframe, you will no longer be able to proceed with it.</p>
-
-<div style="text-align: center; margin: 40px 0;">
-  <div style="display: inline-block; margin: 0 10px; text-align: center;">
-    <div style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;">{{days}}</div>
-    <div style="font-size: 12px; color: #777; margin-top: 5px;">DAY</div>
+  <div style="margin: 30px 0;">
+    <p style="font-weight: bold;">Do you not recognise this verification
+      request?</p>
+    <p>Just reply to this email or click
+      <a
+        href="{{reportUrl}}"
+        style="color: #E92027; text-decoration: underline; font-weight: bold"
+      >Report</a>
+      to report this verification request</p>
   </div>
-  <div style="display: inline-block; margin: 0 10px; text-align: center;">
-    <div style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;">{{hours}}</div>
-    <div style="font-size: 12px; color: #777; margin-top: 5px;">HOUR</div>
-  </div>
-  <div style="display: inline-block; margin: 0 10px; text-align: center;">
-    <div style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;">{{minutes}}</div>
-    <div style="font-size: 12px; color: #777; margin-top: 5px;">MINUTES</div>
-  </div>
-  <div style="display: inline-block; margin: 0 10px; text-align: center;">
-    <div style="font-size: 28px; font-weight: bold; border: 1px solid #ddd; border-radius: 50%; width: 60px; height: 60px; line-height: 60px; margin: 0 auto;">{{seconds}}</div>
-    <div style="font-size: 12px; color: #777; margin-top: 5px;">SECONDS</div>
-  </div>
-</div>
 
-<p>Your can contact the company seeking the Verification request below</p>
-
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr>
-    <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">Telephone</td>
-    <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{companyPhone}}</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">Email Address</td>
-    <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{companyEmail}}</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">Contact Address</td>
-    <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{companyAddress}}</td>
-  </tr>
-</table>
-
-<div style="margin: 30px 0;">
-  <p style="font-weight: bold;">Do you not recognise this verification request?</p>
-  <p>Just reply to this email or click <a href="{{reportUrl}}" style="color: #B11116; text-decoration: underline;">Report</a> to report this verification request</p>
 </div>
