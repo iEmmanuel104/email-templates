@@ -1,0 +1,83 @@
+<div
+  style="background: #fff; border-radius: 16px; padding: 60px 37px 30px 37px; color: #191847"
+>
+
+  <h2>Hi {{candidateName}},</h2>
+
+  <h1
+    style="color: #8B0000; margin-top: 10px; font-size: 32px"
+  >{{verificationType}}
+    Verification Complete for
+    {{name}}</h1>
+  <p style="font-size: 18px">
+    Verification on the Job you filled on your resume. The verification process
+    for
+    {{attester}}
+    is now complete!
+    <br />
+    <br />
+    Here’s a summary:
+    <br />
+    <br />
+    You can view and download the full verification report from your dashboard.
+  </p>
+
+  <div
+    style="background-color: #FFF0F0; border-radius: 8px; border: 1px solid #B01116; padding: 20px; margin: 20px 0;"
+  >
+    <table style="width: 100%; border-collapse: collapse; color: #53090B">
+      <tr
+        style="padding: 12px 0; font-weight: 500; border-bottom: 1px solid #46383D;"
+      >
+        <td style="padding: 12px 0; color: #321011C7; ">Verification Type</td>
+        <td
+          style="padding: 12px 0; text-align: right; font-weight: semi-bold; font-size: 20px"
+        >{{verificationType}}</td>
+      </tr>
+      <tr
+        style="padding: 12px 0; font-weight: 500; border-bottom: 1px solid #46383D;"
+      >
+        <td style="padding: 12px 0; color: #321011C7;">Status</td>
+        <td
+          style="padding: 12px 0; text-align: right; font-weight: semi-bold; font-size: 20px"
+        >{{status}} </td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 0px 0px 0px; color: #321011C7;">Duration</td>
+        <td
+          style="padding: 12px 0 0px 0px; text-align: right;  font-weight: semi-bold; font-size: 20px"
+        >{{duration}} 23 Jan 2024</td>
+      </tr>
+    </table>
+  </div>
+  <div style="display: flex; justify-content: center; margin-bottom: 40px">
+    <a
+      href="{{pdfUrl}}"
+      style="display: inline-block; background-color: #B11116; color: white; text-decoration: none; padding: 12px 24px; border-radius: 8px;"
+    >
+      View Verification Report
+    </a>
+  </div>
+  <p style="color: #191847; font-size: 18px">Thank you for trusting IDCertify to
+    support your verification needs. If you have any additional verification
+    requests, we’re here to assist!
+    <br />
+    <br />
+    <br />
+    Best regards,
+    <br />
+    <br />
+    The IDCertify Team</p>
+  <br />
+
+  <div style="margin: 30px 0;">
+    <p style="font-weight: bold;">Do you not recognise this attestation request?</p>
+    <p>Just reply to this email or click
+      <a
+        href="{{reportUrl}}"
+        style="color: #E92027; text-decoration: underline; font-weight: bold"
+      >Report</a>
+      to report this attestation request</p>
+  </div>
+
+</div>

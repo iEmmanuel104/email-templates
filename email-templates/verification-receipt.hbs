@@ -1,30 +1,48 @@
-<div style="text-align: center; padding: 20px 0;">
-  <img src="https://example.com/receipt-icon.png" alt="Receipt Verified" style="width: 100px; height: auto;">
-</div>
-
-<h1 style="color: #8B0000; text-align: center;">Here's your receipt, {{name}},</h1>
-
-<div style="max-width: 500px; margin: 0 auto; border: 1px solid #eee; border-radius: 8px; padding: 20px; background-color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+<div
+  style="max-width: 500px; margin: 0 auto; border: 1px solid #eee; border-radius: 8px; padding: 20px; background-color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05);"
+>
+  <h1 style="color: #8B0000; text-align: center;">Here's your receipt,
+    {{name}},</h1>
   <table style="width: 100%; border-collapse: collapse;">
     <tr>
-      <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">Ref Number</td>
-      <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{refNumber}}</td>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Ref Number</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{refNumber}}</td>
     </tr>
     <tr>
-      <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">Payment Time</td>
-      <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{paymentTime}}</td>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Payment Time</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{paymentTime}}</td>
     </tr>
     <tr>
-      <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">Payment Method</td>
-      <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{paymentMethod}}</td>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Payment Method</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{paymentMethod}}</td>
     </tr>
     <tr>
-      <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">Verification</td>
-      <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{verificationType}}</td>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >Verification</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{verificationType}}</td>
     </tr>
     <tr>
-      <td style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;">For</td>
-      <td style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;">{{recipient}}</td>
+      <td
+        style="padding: 12px 0; color: #777; border-bottom: 1px solid #eee;"
+      >For</td>
+      <td
+        style="padding: 12px 0; text-align: right; font-weight: 500; border-bottom: 1px solid #eee;"
+      >{{recipient}}</td>
     </tr>
   </table>
 
@@ -32,20 +50,47 @@
     <table style="width: 100%;">
       <tr>
         <td style="color: #777;">Amount</td>
-        <td style="text-align: right; font-size: 24px; font-weight: bold;">{{amount}}</td>
+        <td
+          style="text-align: right; font-size: 24px; font-weight: bold;"
+        >{{amount}}</td>
       </tr>
     </table>
   </div>
-
   <div style="text-align: center; margin: 30px 0;">
-    <p style="margin-bottom: 15px; font-size: 14px;">Scan the QR code to authenticate the receipt.</p>
-    <img src="{{qrCodeUrl}}" alt="QR Code" style="width: 150px; height: 150px;">
+    <div style="display: flex; justify-content: center">
+      <p
+        style="margin-bottom: 15px; font-size: 14px; max-width: 192px; text-align: center; font-weight: 500"
+      >Scan the QR code to authenticate the receipt.</p>
+    </div>
+    <img
+      src="{{qrCodeUrl}}"
+      alt="QR Code"
+      style="width: 150px; height: 150px;"
+    />
   </div>
-
   <div style="text-align: center; margin: 30px 0;">
-    <a href="{{pdfUrl}}" style="display: inline-block; background-color: #B11116; color: white; text-decoration: none; padding: 12px 24px; border-radius: 4px; font-weight: bold;">
-      <span style="vertical-align: middle;">Get PDF Receipt</span>
-      <span style="display: inline-block; margin-right: 8px; vertical-align: middle;">↓</span>
+    <a
+      href="{{pdfUrl}}"
+      style="display: inline-block; background-color: #B11116; color: white; text-decoration: none; padding: 12px 24px; border-radius: 8px;"
+    >
+      <span
+        style="display: inline-block; margin-right: 8px; vertical-align: middle;"
+      ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+        >
+          <path
+            d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg></span>
+      <span style="vertical-align: middle; font-weight: 500">Get PDF Receipt</span>
     </a>
   </div>
 </div>
